@@ -2,13 +2,13 @@
     <section class="works">
         <div class="container">
             <h2>اعمالنا</h2>
-            <p class="text-center">بعض من الاعمال والتطبيقات التي قمنا بها</p>
+            <p class="text-center ">بعض من الاعمال والتطبيقات التي قمنا بها</p>
         <div class="row g-0">
-            <div class="col-lg-3 col-md-4" v-for="inf in info" :key="inf.title">
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="worksDetails">
                     <div class="worksContent">
-                    <div class="workTitle"><h5>{{inf.title}}</h5></div>
-                    <img :src="inf.src" alt="">
+                    <div class="workTitle"><h5>هم هم</h5></div>
+                    <img src="@/assets/imgs/3.png" alt="">
                 </div>
                 <div class="watch">
                     <div class="watchMore">
@@ -18,6 +18,104 @@
                 </div>
             </div>
 
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>المؤسسه العامه للتامينات الاجتماعيه</h5></div>
+                    <img src="@/assets/imgs/18.png" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>قوات امن المنشات</h5></div>
+                    <img src="@/assets/imgs/20.jpg" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>
+</h5></div>
+                    <img src="@/assets/imgs/19.png" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>شيل كوم</h5></div>
+                    <img src="@/assets/imgs/8.png" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>تدللي</h5></div>
+                    <img src="@/assets/imgs/15.png" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>امداد</h5></div>
+                    <img src="@/assets/imgs/2.png" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="worksDetails">
+                    <div class="worksContent">
+                    <div class="workTitle"><h5>ثقه</h5></div>
+                    <img src="@/assets/imgs/unnamed.webp" alt="">
+                </div>
+                <div class="watch">
+                    <div class="watchMore">
+                        <a href="#" target="_blank">مشاهده المزيد</a>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>    
         </div>    
     </section>
@@ -26,6 +124,7 @@
 <script>
 export default{
     data:()=>({
+        
         info:[
             {title:'هم هم',src:'@/assets/imgs/3.png'},
             {title:'المؤسسه العامه للتامينات الاجتماعيه',src:'@/assets/imgs/18.png'},
@@ -50,7 +149,12 @@ padding: 60px 0;
     width: 100%;
     transition: all .4s ease-in-out;
 }
+.works p{
+    
+    font-size: 20px;
+    margin-bottom: 40px;
 
+}
 .works .worksContent{
     display: flex;
     flex-direction: column;
@@ -77,14 +181,18 @@ transform: scale(.9);
     font-size: 17px;
     text-align: center;
     padding: 10px ;
-    color:#fff;
-    transform: translateY(-53px);
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    top:0;
+    z-index: 2;
+    transform: translateY(-129px);
     transition: all .3s ease-in-out;
 }
 .worksDetails{
     position: relative;
     transition: all .3s ease-in-out;
-    margin: 0 15px 10px 15px;
+    margin: 10px 15px 10px 15px;
 }
 .watchMore {
     width: 80%;
