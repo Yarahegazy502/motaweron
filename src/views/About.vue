@@ -1,22 +1,16 @@
 <template>
     <div>
-       
+       <aboutBanner/>
     </div>
 </template>
 
 
 <script>
-// import FirstComponnet from '../components/firstComponent.vue' 
+import aboutBanner from '@/components/About/aboutBanner.vue'
 export default {
     components: {
-        // FirstComponnet,
+        aboutBanner,
     },
-    data() {
-        return {
-            msg1: 'This is about',
-            y:30
-            }
-    }
 };
 </script>
 

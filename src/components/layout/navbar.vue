@@ -17,9 +17,9 @@
           <b-dropdown-item href="#">RU</b-dropdown-item>
           <b-dropdown-item href="#">FA</b-dropdown-item>
         </b-nav-item-dropdown> 
-        <b-nav-item to="/">اعمالنا</b-nav-item>
-        <b-nav-item to="/">العمليات</b-nav-item>
-        <b-nav-item to="/">تواصل معنا</b-nav-item>
+        <b-nav-item to="/Works">اعمالنا</b-nav-item>
+        <b-nav-item to="/Operations">العمليات</b-nav-item>
+        <b-nav-item to="/Contact">تواصل معنا</b-nav-item>
       </b-navbar-nav>     
       
     </b-collapse>

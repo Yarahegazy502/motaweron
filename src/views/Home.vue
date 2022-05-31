@@ -5,6 +5,7 @@
     <works/>
     <counter/>
     <operations/>
+    <testimonial/>
     <contact/>
     <contactUs/>
   </div>
@@ -19,6 +20,7 @@ import counter from '@/components/counter.vue'
 import operations from '@/components/operations.vue'
 import contact from '@/components/contact.vue'
 import contactUs from '@/components/contactUs.vue'
+import Testimonial from '../components/testimonial.vue'
 
 
 export default {
@@ -31,6 +33,7 @@ export default {
     operations,
     contact,
     contactUs,
+    Testimonial
   }
 }
 </script>
