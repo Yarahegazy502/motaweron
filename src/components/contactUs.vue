@@ -2,8 +2,8 @@
   <div class="contactUs">
     <div class="overlay"></div>
     <div class="container">
-      <h2>تواصل معنا</h2>
-      <div class="row g-0">
+      <h2 class="mb-5 text-light">تواصل معنا</h2>
+      <div class="row g-5">
         <div class="col-lg-7 m mb-5">
           <div class="map">
             <iframe
@@ -118,7 +118,7 @@
   z-index: 1;
 }
 .contactUs .overlay {
-  z-index: 0;
+  z-index: -1;
 }
 .contactUs .m {
   z-index: 2;
